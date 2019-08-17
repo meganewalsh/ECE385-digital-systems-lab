@@ -1,0 +1,20 @@
+module generator(	input		Reset
+						input logic [29:0]  array_in
+						output logic [29:0] array_out);
+
+logic [29:0] array_out;
+
+always_comb begin
+
+	if (Reset) begin
+		
+		for(int i = 0; i < 30; i++) begin
+			array_out[i] = $urandom_range(2); 		//takes min value as '0'
+		end
+		
+	end
+	
+	else
+		array_out = array_in;
+		
+end

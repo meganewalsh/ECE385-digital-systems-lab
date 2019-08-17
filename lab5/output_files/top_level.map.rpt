@@ -1,0 +1,540 @@
+Analysis & Synthesis report for top_level
+Tue Oct 02 20:14:33 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |top_level|control:controller|curr_state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Port Connectivity Checks: "HexDriver:BhexL_inst"
+ 14. Port Connectivity Checks: "HexDriver:BhexU_inst"
+ 15. Port Connectivity Checks: "HexDriver:AhexL_inst"
+ 16. Port Connectivity Checks: "HexDriver:AhexU_inst"
+ 17. Port Connectivity Checks: "reg_8:regB"
+ 18. Port Connectivity Checks: "Nine_bit_adder:adder|full_adder:FA8"
+ 19. Port Connectivity Checks: "sync:Sync"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Oct 02 20:14:33 2018       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                      ; top_level                                   ;
+; Top-level Entity Name              ; top_level                                   ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 23                                          ;
+;     Total combinational functions  ; 15                                          ;
+;     Dedicated logic registers      ; 23                                          ;
+; Total registers                    ; 23                                          ;
+; Total pins                         ; 57                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; top_level          ; top_level          ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                   ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path               ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
+; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/ece385/lab5_multiplier/top_level.sv     ;         ;
+; full_adder.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/ece385/lab5_multiplier/full_adder.sv    ;         ;
+; reg_8.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/ece385/lab5_multiplier/reg_8.sv         ;         ;
+; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/ece385/lab5_multiplier/HexDriver.sv     ;         ;
+; control.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/ece385/lab5_multiplier/control.sv       ;         ;
+; Synchronizers.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/ece385/lab5_multiplier/Synchronizers.sv ;         ;
+; 9_bit_adder.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/ece385/lab5_multiplier/9_bit_adder.sv   ;         ;
+; ffx.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/ece385/lab5_multiplier/ffx.sv           ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 23        ;
+;                                             ;           ;
+; Total combinational functions               ; 15        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 14        ;
+;     -- 3 input functions                    ; 0         ;
+;     -- <=2 input functions                  ; 1         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 15        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 23        ;
+;     -- Dedicated logic registers            ; 23        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 57        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; Clk~input ;
+; Maximum fan-out                             ; 23        ;
+; Total fan-out                               ; 190       ;
+; Average fan-out                             ; 1.25      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
+; |top_level                 ; 15 (0)              ; 23 (14)                   ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |top_level                      ; top_level   ; work         ;
+;    |HexDriver:BhexL_inst|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:BhexL_inst ; HexDriver   ; work         ;
+;    |HexDriver:BhexU_inst|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:BhexU_inst ; HexDriver   ; work         ;
+;    |reg_8:regB|            ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_8:regB           ; reg_8       ; work         ;
+;    |sync:Sync|             ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:Sync            ; sync        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_level|control:controller|curr_state                                                                                                                                                                                                                                                                                                               ;
++-------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+
+; Name              ; curr_state.Hold ; curr_state.add8 ; curr_state.add7 ; curr_state.add6 ; curr_state.add5 ; curr_state.add4 ; curr_state.add3 ; curr_state.add2 ; curr_state.add1 ; curr_state.shift8 ; curr_state.shift7 ; curr_state.shift6 ; curr_state.shift5 ; curr_state.shift4 ; curr_state.shift3 ; curr_state.shift2 ; curr_state.shift1 ; curr_state.Start ;
++-------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+
+; curr_state.Start  ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ;
+; curr_state.shift1 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                 ; 1                ;
+; curr_state.shift2 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                 ; 0                 ; 1                ;
+; curr_state.shift3 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                 ; 0                 ; 0                 ; 1                ;
+; curr_state.shift4 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 1                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.shift5 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 1                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.shift6 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 1                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.shift7 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 1                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.shift8 ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.add1   ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.add2   ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.add3   ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.add4   ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.add5   ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.add6   ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.add7   ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.add8   ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
+; curr_state.Hold   ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ;
++-------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; ff_x:ff_x|Q                            ; Stuck at GND due to stuck port data_in ;
+; reg_8:regA|Data_Out[4..7]              ; Stuck at GND due to stuck port data_in ;
+; AhexU[0]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexU[1]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexU[2]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexU[3]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexU[4]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexU[5]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexU[6]~reg0                          ; Stuck at VCC due to stuck port data_in ;
+; reg_8:regA|Data_Out[0..3]              ; Stuck at GND due to stuck port data_in ;
+; AhexL[0]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexL[1]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexL[2]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexL[3]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexL[4]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexL[5]~reg0                          ; Stuck at GND due to stuck port data_in ;
+; AhexL[6]~reg0                          ; Stuck at VCC due to stuck port data_in ;
+; control:controller|curr_state.shift1   ; Lost fanout                            ;
+; control:controller|curr_state.shift2   ; Lost fanout                            ;
+; control:controller|curr_state.shift3   ; Lost fanout                            ;
+; control:controller|curr_state.add1     ; Lost fanout                            ;
+; control:controller|curr_state.add2     ; Lost fanout                            ;
+; control:controller|curr_state.add3     ; Lost fanout                            ;
+; control:controller|curr_state.add4     ; Lost fanout                            ;
+; control:controller|curr_state.shift4   ; Lost fanout                            ;
+; control:controller|curr_state.shift5   ; Lost fanout                            ;
+; control:controller|curr_state.shift6   ; Lost fanout                            ;
+; control:controller|curr_state.shift7   ; Lost fanout                            ;
+; control:controller|curr_state.shift8   ; Lost fanout                            ;
+; control:controller|curr_state.add5     ; Lost fanout                            ;
+; control:controller|curr_state.add6     ; Lost fanout                            ;
+; control:controller|curr_state.add7     ; Lost fanout                            ;
+; control:controller|curr_state.add8     ; Lost fanout                            ;
+; control:controller|curr_state.Hold     ; Lost fanout                            ;
+; control:controller|curr_state~2        ; Lost fanout                            ;
+; control:controller|curr_state~3        ; Lost fanout                            ;
+; control:controller|curr_state~4        ; Lost fanout                            ;
+; control:controller|curr_state~5        ; Lost fanout                            ;
+; control:controller|curr_state~6        ; Lost fanout                            ;
+; control:controller|curr_state.Start    ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 46 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                              ;
++------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name          ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; ff_x:ff_x|Q            ; Stuck at GND              ; reg_8:regA|Data_Out[7], AhexU[0]~reg0, AhexU[1]~reg0, AhexU[2]~reg0, AhexU[3]~reg0, ;
+;                        ; due to stuck port data_in ; AhexU[4]~reg0, AhexU[5]~reg0, AhexU[6]~reg0                                         ;
+; reg_8:regA|Data_Out[4] ; Stuck at GND              ; reg_8:regA|Data_Out[3], AhexL[0]~reg0, AhexL[1]~reg0, AhexL[2]~reg0, AhexL[3]~reg0, ;
+;                        ; due to stuck port data_in ; AhexL[4]~reg0, AhexL[5]~reg0, AhexL[6]~reg0                                         ;
++------------------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 23    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|reg_8:regB|Data_Out[0] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top_level|reg_8:regA|Data_Out[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "HexDriver:BhexL_inst"                                                                                                                                                 ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Out0 ; Output ; Warning  ; Output or bidir port (7 bits) is smaller than the port expression (8 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "HexDriver:BhexU_inst"                                                                                                                                                 ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Out0 ; Output ; Warning  ; Output or bidir port (7 bits) is smaller than the port expression (8 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "HexDriver:AhexL_inst"                                                                                                                                                 ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Out0 ; Output ; Warning  ; Output or bidir port (7 bits) is smaller than the port expression (8 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "HexDriver:AhexU_inst"                                                                                                                                                 ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Out0 ; Output ; Warning  ; Output or bidir port (7 bits) is smaller than the port expression (8 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "reg_8:regB"                 ;
++-----------+--------+----------+------------------------+
+; Port      ; Type   ; Severity ; Details                ;
++-----------+--------+----------+------------------------+
+; Shift_Out ; Output ; Info     ; Explicitly unconnected ;
++-----------+--------+----------+------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "Nine_bit_adder:adder|full_adder:FA8" ;
++------+--------+----------+--------------------------------------+
+; Port ; Type   ; Severity ; Details                              ;
++------+--------+----------+--------------------------------------+
+; c    ; Output ; Info     ; Explicitly unconnected               ;
++------+--------+----------+--------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sync:Sync"                                                                                                                                                                       ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                          ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Warning  ; Input port expression (3 bits) is wider than the input port (1 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; q    ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (3 bits) it drives.  The 2 most-significant bit(s) in the port expression will be connected to GND.            ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 57                          ;
+; cycloneiii_ff         ; 23                          ;
+;     ENA               ; 8                           ;
+;     plain             ; 15                          ;
+; cycloneiii_lcell_comb ; 17                          ;
+;     normal            ; 17                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         4 data inputs ; 14                          ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.48                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Tue Oct 02 20:14:06 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_level -c top_level
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file top_level.sv
+    Info (12023): Found entity 1: top_level File: C:/ece385/lab5_multiplier/top_level.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
+    Info (12023): Found entity 1: full_adder File: C:/ece385/lab5_multiplier/full_adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file reg_8.sv
+    Info (12023): Found entity 1: reg_8 File: C:/ece385/lab5_multiplier/reg_8.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
+    Info (12023): Found entity 1: HexDriver File: C:/ece385/lab5_multiplier/HexDriver.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file control.sv
+    Info (12023): Found entity 1: control File: C:/ece385/lab5_multiplier/control.sv Line: 1
+Info (12021): Found 3 design units, including 3 entities, in source file synchronizers.sv
+    Info (12023): Found entity 1: sync File: C:/ece385/lab5_multiplier/Synchronizers.sv Line: 4
+    Info (12023): Found entity 2: sync_r0 File: C:/ece385/lab5_multiplier/Synchronizers.sv Line: 18
+    Info (12023): Found entity 3: sync_r1 File: C:/ece385/lab5_multiplier/Synchronizers.sv Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file 9_bit_adder.sv
+    Info (12023): Found entity 1: Nine_bit_adder File: C:/ece385/lab5_multiplier/9_bit_adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ffx.sv
+    Info (12023): Found entity 1: ff_x File: C:/ece385/lab5_multiplier/ffx.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench File: C:/ece385/lab5_multiplier/testbench.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at 9_bit_adder.sv(16): created implicit net for "c0" File: C:/ece385/lab5_multiplier/9_bit_adder.sv Line: 16
+Info (12127): Elaborating entity "top_level" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at top_level.sv(20): truncated value with size 8 to match size of target (7) File: C:/ece385/lab5_multiplier/top_level.sv Line: 20
+Warning (10230): Verilog HDL assignment warning at top_level.sv(21): truncated value with size 8 to match size of target (7) File: C:/ece385/lab5_multiplier/top_level.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at top_level.sv(22): truncated value with size 8 to match size of target (7) File: C:/ece385/lab5_multiplier/top_level.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at top_level.sv(23): truncated value with size 8 to match size of target (7) File: C:/ece385/lab5_multiplier/top_level.sv Line: 23
+Info (12128): Elaborating entity "sync" for hierarchy "sync:Sync" File: C:/ece385/lab5_multiplier/top_level.sv Line: 17
+Info (12128): Elaborating entity "control" for hierarchy "control:controller" File: C:/ece385/lab5_multiplier/top_level.sv Line: 29
+Info (12128): Elaborating entity "Nine_bit_adder" for hierarchy "Nine_bit_adder:adder" File: C:/ece385/lab5_multiplier/top_level.sv Line: 34
+Info (12128): Elaborating entity "full_adder" for hierarchy "Nine_bit_adder:adder|full_adder:FA0" File: C:/ece385/lab5_multiplier/9_bit_adder.sv Line: 16
+Info (12128): Elaborating entity "ff_x" for hierarchy "ff_x:ff_x" File: C:/ece385/lab5_multiplier/top_level.sv Line: 39
+Info (12128): Elaborating entity "reg_8" for hierarchy "reg_8:regA" File: C:/ece385/lab5_multiplier/top_level.sv Line: 44
+Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:AhexU_inst" File: C:/ece385/lab5_multiplier/top_level.sv Line: 55
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "syncReset" is missing source, defaulting to GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 12
+    Warning (12110): Net "syncRun" is missing source, defaulting to GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 12
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "X" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 3
+    Warning (13410): Pin "AhexU[0]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexU[1]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexU[2]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexU[3]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexU[4]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexU[5]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexU[6]" is stuck at VCC File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexL[0]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexL[1]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexL[2]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexL[3]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexL[4]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexL[5]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "AhexL[6]" is stuck at VCC File: C:/ece385/lab5_multiplier/top_level.sv Line: 19
+    Warning (13410): Pin "Aval[0]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 5
+    Warning (13410): Pin "Aval[1]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 5
+    Warning (13410): Pin "Aval[2]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 5
+    Warning (13410): Pin "Aval[3]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 5
+    Warning (13410): Pin "Aval[4]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 5
+    Warning (13410): Pin "Aval[5]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 5
+    Warning (13410): Pin "Aval[6]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 5
+    Warning (13410): Pin "Aval[7]" is stuck at GND File: C:/ece385/lab5_multiplier/top_level.sv Line: 5
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 22 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/ece385/lab5_multiplier/output_files/top_level.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Reset" File: C:/ece385/lab5_multiplier/top_level.sv Line: 2
+    Warning (15610): No output dependent on input pin "Run" File: C:/ece385/lab5_multiplier/top_level.sv Line: 2
+Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 45 output pins
+    Info (21061): Implemented 23 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 4750 megabytes
+    Info: Processing ended: Tue Oct 02 20:14:33 2018
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:55
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/ece385/lab5_multiplier/output_files/top_level.map.smsg.
+
+

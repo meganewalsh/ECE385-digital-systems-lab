@@ -1,0 +1,448 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ece385/Lab9_Avalon_Provided_2.0/simulation/modelsim
+vAddRoundKey
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1541548084
+!i10b 1
+!s100 8=<l^b[mV[CfHAdgQcgI:1
+Iod?FG?Z9d4EQX=khR1WW^0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 AddRoundKey_sv_unit
+S1
+R0
+w1541458233
+8C:/ece385/Lab9_Avalon_Provided_2.0/AddRoundKey.sv
+FC:/ece385/Lab9_Avalon_Provided_2.0/AddRoundKey.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1541548084.000000
+!s107 C:/ece385/Lab9_Avalon_Provided_2.0/AddRoundKey.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/ece385/Lab9_Avalon_Provided_2.0|C:/ece385/Lab9_Avalon_Provided_2.0/AddRoundKey.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/ece385/Lab9_Avalon_Provided_2.0
+Z8 tCvgOpt 0
+n@add@round@key
+vAES
+R1
+Z9 !s110 1541548082
+!i10b 1
+!s100 [gIVKn6XI3MIhe`NMjgdF2
+IRDL>U]bjR=hiob?7onY2f3
+R3
+!s105 AES_sv_unit
+S1
+R0
+w1541546642
+8C:/ece385/Lab9_Avalon_Provided_2.0/AES.sv
+FC:/ece385/Lab9_Avalon_Provided_2.0/AES.sv
+L0 10
+R4
+r1
+!s85 0
+31
+Z10 !s108 1541548082.000000
+!s107 C:/ece385/Lab9_Avalon_Provided_2.0/AES.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/ece385/Lab9_Avalon_Provided_2.0|C:/ece385/Lab9_Avalon_Provided_2.0/AES.sv|
+!i113 1
+R6
+R7
+R8
+n@a@e@s
+vchoose
+R1
+Z11 !s110 1541548083
+!i10b 1
+!s100 FYbNe3A_V_G[aXXmgVfjP3
+IR_KYAIAl6COfQ8K<BAU[B1
+R3
+Z12 !s105 mux_sv_unit
+S1
+R0
+Z13 w1541495295
+Z14 8C:/ece385/Lab9_Avalon_Provided_2.0/mux.sv
+Z15 FC:/ece385/Lab9_Avalon_Provided_2.0/mux.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z16 !s108 1541548083.000000
+Z17 !s107 C:/ece385/Lab9_Avalon_Provided_2.0/mux.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/ece385/Lab9_Avalon_Provided_2.0|C:/ece385/Lab9_Avalon_Provided_2.0/mux.sv|
+!i113 1
+R6
+R7
+R8
+vFsmMUX
+R1
+R11
+!i10b 1
+!s100 YR_^g;lWbkhVAoJCH:06;3
+IzYR6hGI<=3WFccFToh9zd0
+R3
+R12
+S1
+R0
+R13
+R14
+R15
+L0 77
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+R8
+n@fsm@m@u@x
+vGF_Mul_9
+R1
+Z19 DXx4 work 21 InvMixColumns_sv_unit 0 22 ]zK_Q[gG_DeoiV2e_QM^V2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 `>]4H4@iliSP?dl2@_DE82
+IM=E<Fk?mh7Q3[S5m>iFzj0
+Z20 !s105 InvMixColumns_sv_unit
+S1
+R0
+Z21 w1540403920
+Z22 8C:/ece385/Lab9_Avalon_Provided_2.0/InvMixColumns.sv
+Z23 FC:/ece385/Lab9_Avalon_Provided_2.0/InvMixColumns.sv
+L0 74
+R4
+R10
+Z24 !s107 C:/ece385/Lab9_Avalon_Provided_2.0/InvMixColumns.sv|
+Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/ece385/Lab9_Avalon_Provided_2.0|C:/ece385/Lab9_Avalon_Provided_2.0/InvMixColumns.sv|
+!i113 1
+R6
+R7
+R8
+n@g@f_@mul_9
+vGF_Mul_b
+R1
+R19
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 LWUM_dc3_P74=OT`RzHoN1
+I0Rim9nPE?^XIP[MW:zG<b1
+R20
+S1
+R0
+R21
+R22
+R23
+Z26 L0 93
+R4
+R10
+R24
+R25
+!i113 1
+R6
+R7
+R8
+n@g@f_@mul_b
+vGF_Mul_d
+R1
+R19
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 CPB;fC9?WAod]IM0<oISe0
+IF`dBdVTY^Yg[4;6OAR`HO1
+R20
+S1
+R0
+R21
+R22
+R23
+L0 112
+R4
+R10
+R24
+R25
+!i113 1
+R6
+R7
+R8
+n@g@f_@mul_d
+vGF_Mul_e
+R1
+R19
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 8MSGaQX_X5X4HB0HA=_gj1
+IndLQ1Mi3EG`O^1a6iL@I^1
+R20
+S1
+R0
+R21
+R22
+R23
+L0 131
+R4
+R10
+R24
+R25
+!i113 1
+R6
+R7
+R8
+n@g@f_@mul_e
+vInvMixColumns
+R1
+R9
+!i10b 1
+!s100 4o]QlL4?^EZ0IeL:kL;`V3
+IYdA;cOObng86Na96AhoLd1
+R3
+R20
+S1
+R0
+R21
+R22
+R23
+Z27 L0 14
+R4
+r1
+!s85 0
+31
+R10
+R24
+R25
+!i113 1
+R6
+R7
+R8
+n@inv@mix@columns
+XInvMixColumns_sv_unit
+R1
+V]zK_Q[gG_DeoiV2e_QM^V2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ijnMUG_l2]2^Mo8SMVA001
+I]zK_Q[gG_DeoiV2e_QM^V2
+!i103 1
+S1
+R0
+R21
+R22
+R23
+L0 65
+R4
+R10
+R24
+R25
+!i113 1
+R6
+R7
+R8
+n@inv@mix@columns_sv_unit
+vInvShiftRows
+R1
+Z28 !s110 1541548081
+!i10b 1
+!s100 IGnkNoM>n=3VhTK>Jl2F=1
+Iz=n2n9YBSRT4>=0F9<1]J2
+R3
+!s105 InvShiftRows_sv_unit
+S1
+R0
+R21
+8C:/ece385/Lab9_Avalon_Provided_2.0/InvShiftRows.sv
+FC:/ece385/Lab9_Avalon_Provided_2.0/InvShiftRows.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1541548081.000000
+!s107 C:/ece385/Lab9_Avalon_Provided_2.0/InvShiftRows.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/ece385/Lab9_Avalon_Provided_2.0|C:/ece385/Lab9_Avalon_Provided_2.0/InvShiftRows.sv|
+!i113 1
+R6
+R7
+R8
+n@inv@shift@rows
+vInvSubBytes
+R1
+R28
+!i10b 1
+!s100 fYzzGZ]YiaT7z3;]GQMHB1
+I=>bd7RhgnihSkJ:^4PMVo2
+R3
+Z29 !s105 SubBytes_sv_unit
+S1
+R0
+R21
+Z30 8C:/ece385/Lab9_Avalon_Provided_2.0/SubBytes.sv
+Z31 FC:/ece385/Lab9_Avalon_Provided_2.0/SubBytes.sv
+R26
+R4
+r1
+!s85 0
+31
+Z32 !s108 1541548080.000000
+Z33 !s107 C:/ece385/Lab9_Avalon_Provided_2.0/SubBytes.sv|
+Z34 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/ece385/Lab9_Avalon_Provided_2.0|C:/ece385/Lab9_Avalon_Provided_2.0/SubBytes.sv|
+!i113 1
+R6
+R7
+R8
+n@inv@sub@bytes
+vKeyExpansion
+R1
+R2
+!i10b 1
+!s100 Bdiae<klOdVNS3GLcDzdF2
+IeF6NOVJ37zJRYB_05d:IM3
+R3
+Z35 !s105 KeyExpansion_sv_unit
+S1
+R0
+R21
+Z36 8C:/ece385/Lab9_Avalon_Provided_2.0/KeyExpansion.sv
+Z37 FC:/ece385/Lab9_Avalon_Provided_2.0/KeyExpansion.sv
+L0 13
+R4
+r1
+!s85 0
+31
+R5
+Z38 !s107 C:/ece385/Lab9_Avalon_Provided_2.0/KeyExpansion.sv|
+Z39 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/ece385/Lab9_Avalon_Provided_2.0|C:/ece385/Lab9_Avalon_Provided_2.0/KeyExpansion.sv|
+!i113 1
+R6
+R7
+R8
+n@key@expansion
+vKeyExpansionOne
+R1
+R2
+!i10b 1
+!s100 2i=U]i?z:7<e:gKRGRX`f2
+I5gmI4LgC^6RH>==1mR<:k3
+R3
+R35
+S1
+R0
+R21
+R36
+R37
+L0 41
+R4
+r1
+!s85 0
+31
+R5
+R38
+R39
+!i113 1
+R6
+R7
+R8
+n@key@expansion@one
+vreplace
+R1
+R11
+!i10b 1
+!s100 _@2=joB1@KNlI^HHc5DOO1
+IgmaE<L@_U7EUoGj48JVzb2
+R3
+R12
+S1
+R0
+R13
+R14
+R15
+L0 25
+R4
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R6
+R7
+R8
+vSubBytes
+R1
+R28
+!i10b 1
+!s100 J7353OL5=^nSOQEV4PX_03
+Ii^Rdb1SEIeK>g]N[XTbJL0
+R3
+R29
+S1
+R0
+R21
+R30
+R31
+R27
+R4
+r1
+!s85 0
+31
+R32
+R33
+R34
+!i113 1
+R6
+R7
+R8
+n@sub@bytes
+vtestbench
+R1
+!s110 1541548085
+!i10b 1
+!s100 ;OVmdH4A:0IB`[c_<iPSg1
+I4Bb?0@?K9UPb@G^az0VGm1
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1541546631
+8C:/ece385/Lab9_Avalon_Provided_2.0/testbench.sv
+FC:/ece385/Lab9_Avalon_Provided_2.0/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1541548085.000000
+!s107 C:/ece385/Lab9_Avalon_Provided_2.0/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/ece385/Lab9_Avalon_Provided_2.0|C:/ece385/Lab9_Avalon_Provided_2.0/testbench.sv|
+!i113 1
+R6
+R7
+R8

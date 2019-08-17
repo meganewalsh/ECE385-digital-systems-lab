@@ -1,0 +1,29 @@
+Quartus Prime Archive log --	C:/ece385/lab5_multiplier/top_level_tmp_archive.qarlog
+
+Archive:	C:/ece385/lab5_multiplier/top_level_tmp_archive.qar
+Date:		Tue Sep 25 13:49:26 2018
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/ece385/lab5_multiplier/9_bit_adder.sv
+C:/ece385/lab5_multiplier/HexDriver.sv
+C:/ece385/lab5_multiplier/Synchronizers.sv
+C:/ece385/lab5_multiplier/control.sv
+C:/ece385/lab5_multiplier/ffx.sv
+C:/ece385/lab5_multiplier/full_adder.sv
+C:/ece385/lab5_multiplier/reg_8.sv
+C:/ece385/lab5_multiplier/testbench.sv
+C:/ece385/lab5_multiplier/top_level.qpf
+C:/ece385/lab5_multiplier/top_level.qsf
+C:/ece385/lab5_multiplier/top_level.sv
+c:/intelfpga_lite/18.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 12 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Sep 25 13:49:33 2018
+Source archive file:	C:/ece385/lab5_multiplier/top_level_tmp_archive.qar
+Archive was extracted into	D:/meganew2_srinija2/
+		 - successfully.

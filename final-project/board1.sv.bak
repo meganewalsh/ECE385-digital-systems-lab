@@ -1,0 +1,137 @@
+//-------------------------------------------------------------------------
+//    Ball.sv                                                            --
+//    Viral Mehta                                                        --
+//    Spring 2005                                                        --
+//                                                                       --
+//    Modified by Stephen Kempf 03-01-2006                               --
+//                              03-12-2007                               --
+//    Translated by Joe Meng    07-07-2013                               --
+//    Modified by Po-Han Huang  12-08-2017                               --
+//    Spring 2018 Distribution                                           --
+//                                                                       --
+//    For use with ECE 385 Lab 8                                         --
+//    UIUC ECE Department                                                --
+//-------------------------------------------------------------------------
+
+
+module  Board ( input         Clk,                // 50 MHz clock
+                             Reset,              // Active-high reset signal
+                             frame_clk,          // The clock indicating a new frame (~60Hz)
+									  correct_key,
+               input [9:0]   DrawX, DrawY,       // Current pixel coordinates
+					input [2:0]   random_array [29:0],
+					input [4:0]   current_row,
+               output logic  is_outline, is_black, is_pink,   // Whether current pixel belongs to ball or background
+					output [4:0]  new_row
+					);
+	 
+    
+    logic [9:0] Board_Y_Center, Board_Y_Center_in;  // Center position on the Y axis
+
+	 parameter [9:0] Board_X_Center = 10'd540;  // Center position on the X axis
+    parameter [9:0] Ball_X_Min = 10'd0;       // Leftmost point on the X axis
+    parameter [9:0] Ball_X_Max = 10'd639;     // Rightmost point on the X axis
+    parameter [9:0] Ball_Y_Min = 10'd0;       // Topmost point on the Y axis
+    parameter [9:0] Ball_Y_Max = 10'd479;     // Bottommost point on the Y axis
+    parameter [9:0] Board_Y_Step = 10'd1;      // Step size on the Y axis
+    parameter [9:0] Cell_Size = 10'd30;        // Ball size
+	 
+    
+    //////// Do not modify the always_ff block. ////////
+    // Detect rising edge of frame_clk
+    logic frame_clk_delayed, frame_clk_rising_edge;
+    always_ff @ (posedge Clk) begin
+        frame_clk_delayed <= frame_clk;
+        frame_clk_rising_edge <= (frame_clk == 1'b1) && (frame_clk_delayed == 1'b0);
+    end
+	 
+	 
+    // Update registers
+    always_ff @ (posedge Clk)
+    begin
+        if (Reset)
+        begin
+				Board_Y_Center <= 10'd479;
+        end
+        else
+        begin
+				Board_Y_Center <= Board_Y_Center_in;
+        end
+    end
+
+ 
+    always_comb begin
+        // By default, keep motion and position unchanged
+		  Board_Y_Center_in = Board_Y_Center;
+		  new_row = current_row;
+
+        // Update position and motion only at rising edge of frame clock
+        if (frame_clk_rising_edge & correct_key) begin
+            Board_Y_Center_in = Board_Y_Center + Board_Y_Step;
+				new_row = current_row + 5'd1;
+			end 
+			
+    end
+    
+    // Compute whether the pixel corresponds to the board's outline
+    int DistX, DistY, Size;
+    assign DistX = DrawX - Board_X_Center;
+    assign DistY = DrawY - Board_Y_Center;
+    assign Size = Cell_Size;
+    always_comb begin
+        if ( ( (DistY == -1*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -2*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -3*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -4*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -5*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -6*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -7*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -8*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -9*Size)  & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -10*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -11*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -12*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -13*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -14*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -15*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+				 ( (DistY == -16*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -17*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -18*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -19*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -20*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -21*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -22*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -23*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -24*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -25*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -26*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -27*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -28*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -29*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) |
+		       ( (DistY == -30*Size) & (DrawX <= Board_X_Center+3*Size & DrawX >= Board_X_Center-3*Size) ) )
+
+				is_outline = 1'b1;
+        else
+            is_outline = 1'b0;
+
+    end
+	 
+	 
+	 
+	 int col_match, row_match, dist_from_left;
+	 assign dist_from_left = DrawX - 10'd450;
+	 assign col_match = 2 - (dist_from_left / (2*Size));
+	 //add current_row to row_match ??
+	 assign row_match = DistY / (-Size);
+	
+	 always_comb begin
+	 
+		if ( random_array[row_match][col_match] == 1'b1 & (DrawX < Board_X_Center+3*Size & DrawX > Board_X_Center-3*Size) & DrawY <= Board_Y_Center)
+			is_black = 1'b1;
+	   else
+			is_black = 1'b0;
+	 
+	 end
+	 
+	
+endmodule

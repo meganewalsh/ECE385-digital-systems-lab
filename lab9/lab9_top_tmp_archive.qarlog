@@ -1,0 +1,104 @@
+Quartus Prime Archive log --	C:/ece385/Lab9_Avalon_Provided_2.0/lab9_top_tmp_archive.qarlog
+
+Archive:	C:/ece385/Lab9_Avalon_Provided_2.0/lab9_top_tmp_archive.qar
+Date:		Tue Nov 06 11:23:10 2018
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/ece385/Lab8_provided/SDC1.sdc
+C:/ece385/Lab8_provided/lab8.qsf
+C:/ece385/Lab9_Avalon_Provided_2.0/AES.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/AES_Decryption_Core_hw.tcl
+C:/ece385/Lab9_Avalon_Provided_2.0/AddRoundKey.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/InvMixColumns.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/InvShiftRows.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/KeyExpansion.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/SubBytes.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/avalon_aes_interface.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/hexdriver.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9.sdc
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9.sopcinfo
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc.qsys
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc.sopcinfo
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc.bsf
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc.cmp
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc.html
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc.xml
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc_bb.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc_generation.rpt
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc_generation_previous.rpt
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc_inst.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/lab9_soc_inst.vhd
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/lab9_soc.debuginfo
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/lab9_soc.qip
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/lab9_soc.regmap
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/lab9_soc.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_avalon_st_pipeline_base.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_merlin_master_agent.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_merlin_master_translator.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_reset_controller.sdc
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_reset_controller.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_reset_synchronizer.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/altera_std_synchronizer_nocut.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/avalon_aes_interface.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_irq_mapper.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_jtag_uart_0.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_keycode.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux_001.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux_001.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux_002.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_001.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_002.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_003.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_004.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux_001.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux_002.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux_001.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.sdc
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_tck.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_ociram_default_contents.mif
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_rf_ram_a.mif
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_rf_ram_b.mif
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_test_bench.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_onchip_memory2_0.hex
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_onchip_memory2_0.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_sdram.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_sdram_pll.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_sysid_qsys_0.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_soc/synthesis/submodules/lab9_soc_timer_0.v
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_top.qpf
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_top.qsf
+C:/ece385/Lab9_Avalon_Provided_2.0/lab9_top.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/mux.sv
+C:/ece385/Lab9_Avalon_Provided_2.0/testbench.sv
+c:/intelfpga_lite/18.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 87 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Nov 06 11:23:19 2018
+Source archive file:	C:/ece385/Lab9_Avalon_Provided_2.0/lab9_top_tmp_archive.qar
+Archive was extracted into	D:/385ABE/meganew2_srinija2/
+		 - successfully.

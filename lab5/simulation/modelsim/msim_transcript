@@ -1,0 +1,144 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do top_level_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/top_level.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:10 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/top_level.sv 
+# -- Compiling module top_level
+# 
+# Top level modules:
+# 	top_level
+# End time: 20:16:10 on Oct 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:10 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 20:16:10 on Oct 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/reg_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:10 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/reg_8.sv 
+# -- Compiling module reg_8
+# 
+# Top level modules:
+# 	reg_8
+# End time: 20:16:10 on Oct 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:10 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 20:16:10 on Oct 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:10 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/control.sv 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 20:16:10 on Oct 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/Synchronizers.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:10 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/Synchronizers.sv 
+# -- Compiling module sync
+# -- Compiling module sync_r0
+# -- Compiling module sync_r1
+# 
+# Top level modules:
+# 	sync
+# 	sync_r0
+# 	sync_r1
+# End time: 20:16:11 on Oct 02,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/9_bit_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:11 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/9_bit_adder.sv 
+# -- Compiling module Nine_bit_adder
+# 
+# Top level modules:
+# 	Nine_bit_adder
+# End time: 20:16:11 on Oct 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/ffx.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:11 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/ffx.sv 
+# -- Compiling module ff_x
+# 
+# Top level modules:
+# 	ff_x
+# End time: 20:16:11 on Oct 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/ece385/lab5_multiplier {C:/ece385/lab5_multiplier/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:11 on Oct 02,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab5_multiplier" C:/ece385/lab5_multiplier/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 20:16:11 on Oct 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 20:16:11 on Oct 02,2018
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top_level
+# Loading work.sync
+# Loading work.control
+# Loading work.Nine_bit_adder
+# Loading work.full_adder
+# Loading work.ff_x
+# Loading work.reg_8
+# Loading work.HexDriver
+# ** Warning: (vsim-3015) C:/ece385/lab5_multiplier/top_level.sv(17): [PCDPC] - Port size (1) does not match connection size (3) for port 'd'. The port definition is at: C:/ece385/lab5_multiplier/Synchronizers.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/top_level0/Sync File: C:/ece385/lab5_multiplier/Synchronizers.sv
+# ** Warning: (vsim-3015) C:/ece385/lab5_multiplier/top_level.sv(17): [PCDPC] - Port size (1) does not match connection size (3) for port 'q'. The port definition is at: C:/ece385/lab5_multiplier/Synchronizers.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/top_level0/Sync File: C:/ece385/lab5_multiplier/Synchronizers.sv
+# ** Warning: (vsim-3015) C:/ece385/lab5_multiplier/top_level.sv(51): [PCDPC] - Port size (7) does not match connection size (8) for port 'Out0'. The port definition is at: C:/ece385/lab5_multiplier/HexDriver.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/top_level0/AhexU_inst File: C:/ece385/lab5_multiplier/HexDriver.sv
+# ** Warning: (vsim-3015) C:/ece385/lab5_multiplier/top_level.sv(57): [PCDPC] - Port size (7) does not match connection size (8) for port 'Out0'. The port definition is at: C:/ece385/lab5_multiplier/HexDriver.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/top_level0/AhexL_inst File: C:/ece385/lab5_multiplier/HexDriver.sv
+# ** Warning: (vsim-3015) C:/ece385/lab5_multiplier/top_level.sv(63): [PCDPC] - Port size (7) does not match connection size (8) for port 'Out0'. The port definition is at: C:/ece385/lab5_multiplier/HexDriver.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/top_level0/BhexU_inst File: C:/ece385/lab5_multiplier/HexDriver.sv
+# ** Warning: (vsim-3015) C:/ece385/lab5_multiplier/top_level.sv(69): [PCDPC] - Port size (7) does not match connection size (8) for port 'Out0'. The port definition is at: C:/ece385/lab5_multiplier/HexDriver.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/top_level0/BhexL_inst File: C:/ece385/lab5_multiplier/HexDriver.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+# ** Warning: (vsim-8315) C:/ece385/lab5_multiplier/control.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/top_level0/controller
+# End time: 20:28:02 on Oct 02,2018, Elapsed time: 0:11:51
+# Errors: 0, Warnings: 7

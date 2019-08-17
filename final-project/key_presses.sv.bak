@@ -1,0 +1,18 @@
+module key_presses (	input [2:0] random_array[29:0],
+							input row_counter,
+							input leftKey, rightKey, middleKey,
+							output logic correct_key );
+
+//row_counter starts at 0
+
+
+	if ( random_array[row_counter] )
+		correct_key = 1'b1;
+	else
+		correct_key = 1'b0;
+		
+		
+		
+		
+		
+endmodule

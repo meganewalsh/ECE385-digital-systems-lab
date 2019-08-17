@@ -1,0 +1,8 @@
+module player1 ();
+
+logic is_P1;
+
+logic [10:0] start_x = 300;
+logic [10:0] start_y = 300;
+logic [10:0] size_x = 8;
+logic [10:0] size_y = 16;

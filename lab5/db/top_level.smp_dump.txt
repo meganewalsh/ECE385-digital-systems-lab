@@ -1,0 +1,21 @@
+
+State Machine - |top_level|control:controller|curr_state
+Name curr_state.Hold curr_state.add8 curr_state.add7 curr_state.add6 curr_state.add5 curr_state.add4 curr_state.add3 curr_state.add2 curr_state.add1 curr_state.shift8 curr_state.shift7 curr_state.shift6 curr_state.shift5 curr_state.shift4 curr_state.shift3 curr_state.shift2 curr_state.shift1 curr_state.Start 
+curr_state.Start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+curr_state.shift1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+curr_state.shift2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+curr_state.shift3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+curr_state.shift4 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+curr_state.shift5 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+curr_state.shift6 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+curr_state.shift7 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+curr_state.shift8 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+curr_state.add1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+curr_state.add2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+curr_state.add3 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.add4 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.add5 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.add6 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.add7 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.add8 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.Hold 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

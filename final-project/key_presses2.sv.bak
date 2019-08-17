@@ -1,0 +1,39 @@
+module key_presses2 (	input [2:0] random_array[29:0],
+							input Clk,
+							input logic allowed_to_press_In,
+							input integer row_counter,
+							input logic [7:0] keycode,
+							output logic correct_key2);
+
+always_comb begin
+
+	correct_key = 1'b0;
+
+	case( keycode[7:0] )
+	
+	 //A = left
+			8'h04 	:		begin
+									if (random_array[row_counter] == 3'b100) begin
+										correct_key = 1'b1;
+									end
+								end
+	 //S = middle
+			8'h16		:		begin
+									if (random_array[row_counter] == 3'b010) begin
+										correct_key = 1'b1;
+									end
+								end
+	 //D = right
+			8'h07		:		begin
+									if (random_array[row_counter] == 3'b001) begin
+										correct_key = 1'b1;
+									end
+								end
+	 //none	
+			default	:		;
+
+	endcase		
+	
+end
+		
+endmodule

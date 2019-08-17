@@ -1,0 +1,80 @@
+Quartus Prime Archive log --	C:/ece385/Final_Project/__lab7_usb.auto.qarlog
+
+Archive:	C:/ece385/Final_Project/__lab7_usb.auto.qar
+Date:		Tue Dec 11 12:10:40 2018
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/ece385/Final_Project/db/a_dpfifo_l011.tdf
+C:/ece385/Final_Project/db/a_fefifo_7cf.tdf
+C:/ece385/Final_Project/db/abs_divider_4dg.tdf
+C:/ece385/Final_Project/db/abs_divider_kbg.tdf
+C:/ece385/Final_Project/db/abs_divider_nbg.tdf
+C:/ece385/Final_Project/db/add_sub_7pc.tdf
+C:/ece385/Final_Project/db/add_sub_8pc.tdf
+C:/ece385/Final_Project/db/alt_u_div_67f.tdf
+C:/ece385/Final_Project/db/alt_u_div_6af.tdf
+C:/ece385/Final_Project/db/alt_u_div_c7f.tdf
+C:/ece385/Final_Project/db/altsyncram_6mc1.tdf
+C:/ece385/Final_Project/db/altsyncram_ac71.tdf
+C:/ece385/Final_Project/db/altsyncram_e8h1.tdf
+C:/ece385/Final_Project/db/altsyncram_nio1.tdf
+C:/ece385/Final_Project/db/cntr_1ob.tdf
+C:/ece385/Final_Project/db/cntr_do7.tdf
+C:/ece385/Final_Project/db/lab8.cbx.xml
+C:/ece385/Final_Project/db/lab8.qpf
+C:/ece385/Final_Project/db/lpm_abs_2v9.tdf
+C:/ece385/Final_Project/db/lpm_abs_5v9.tdf
+C:/ece385/Final_Project/db/lpm_abs_i0a.tdf
+C:/ece385/Final_Project/db/lpm_divide_92p.tdf
+C:/ece385/Final_Project/db/lpm_divide_hkm.tdf
+C:/ece385/Final_Project/db/lpm_divide_p0p.tdf
+C:/ece385/Final_Project/db/lpm_divide_s0p.tdf
+C:/ece385/Final_Project/db/lpm_divide_soo.tdf
+C:/ece385/Final_Project/db/lpm_divide_voo.tdf
+C:/ece385/Final_Project/db/mult_p5t.tdf
+C:/ece385/Final_Project/db/scfifo_jr21.tdf
+C:/ece385/Final_Project/db/sign_div_unsign_9nh.tdf
+C:/ece385/Final_Project/db/vga_clk_altpll.v
+Color_Mapper.sv
+HexDriver.sv
+PLLJ_PLLSPE_INFO.txt
+SDC1.sdc
+VGA_controller.sv
+__lab7_usb.auto.qarlog
+ball.sv
+ball1.sv
+board1.sv
+board2.sv
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+debouncer.sv
+font_rom.sv
+game.sv
+generator.sv
+generator2.sv
+hpi_io_intf.sv
+isGameOver.sv
+key_presses.sv
+key_presses2.sv
+lab7_usb.qsf
+lab7_usb_assignment_defaults.qdf
+lab8.qsys
+lab8.sv
+lab8_assignment_defaults.qdf
+lab8_tmp_archive.qarlog
+lfsr.sv
+newDebounce.sv
+nios_system.qsys
+player1.sv
+player2.sv
+printGameOver.sv
+states.sv
+title.sv
+vga_clk.ppf
+vga_clk.qip
+vga_clk.v
+winner.sv
+	======= Total: 69 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

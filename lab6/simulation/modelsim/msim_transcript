@@ -1,0 +1,230 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab6_toplevel_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/tristate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:14 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/tristate.sv 
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# End time: 21:13:14 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/test_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:14 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/test_memory.sv 
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# End time: 21:13:14 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/SLC3_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:14 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/SLC3_2.sv 
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:13:14 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/Mem2IO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:14 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/Mem2IO.sv 
+# -- Compiling module Mem2IO
+# 
+# Top level modules:
+# 	Mem2IO
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/ISDU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/ISDU.sv 
+# -- Compiling module ISDU
+# 
+# Top level modules:
+# 	ISDU
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/BEN_REG.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/BEN_REG.sv 
+# -- Compiling module BEN_Reg
+# 
+# Top level modules:
+# 	BEN_Reg
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/MUX.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/MUX.sv 
+# -- Compiling module PC_MUX
+# -- Compiling module DR_MUX
+# -- Compiling module SR1_MUX
+# -- Compiling module SR2_MUX
+# -- Compiling module ADDR1_MUX
+# -- Compiling module ADDR2_MUX
+# -- Compiling module GATE_MUX
+# -- Compiling module MDR_MUX
+# 
+# Top level modules:
+# 	PC_MUX
+# 	DR_MUX
+# 	SR1_MUX
+# 	SR2_MUX
+# 	ADDR1_MUX
+# 	ADDR2_MUX
+# 	GATE_MUX
+# 	MDR_MUX
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/NZP.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/NZP.sv 
+# -- Compiling module NZP_Block
+# 
+# Top level modules:
+# 	NZP_Block
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/REGISTER.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/REGISTER.sv 
+# -- Compiling module reg_16
+# -- Compiling module REG_FILE
+# 
+# Top level modules:
+# 	reg_16
+# 	REG_FILE
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/SEXT.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/SEXT.sv 
+# -- Compiling module SEXT_5
+# -- Compiling module SEXT_7
+# -- Compiling module SEXT_10
+# -- Compiling module SEXT_11
+# 
+# Top level modules:
+# 	SEXT_5
+# 	SEXT_7
+# 	SEXT_10
+# 	SEXT_11
+# End time: 21:13:15 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/memory_contents.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:15 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/memory_contents.sv 
+# -- Compiling package memory_contents_sv_unit
+# -- Importing package SLC3_2
+# -- Compiling module memory_parser
+# 
+# Top level modules:
+# 	memory_parser
+# End time: 21:13:16 on Oct 16,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:16 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 21:13:16 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/slc3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:16 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/slc3.sv 
+# -- Compiling module slc3
+# 
+# Top level modules:
+# 	slc3
+# End time: 21:13:16 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/lab6_toplevel.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:16 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/lab6_toplevel.sv 
+# -- Compiling module lab6_toplevel
+# 
+# Top level modules:
+# 	lab6_toplevel
+# End time: 21:13:16 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/ece385/lab6g {C:/ece385/lab6g/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:16 on Oct 16,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/lab6g" C:/ece385/lab6g/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:13:16 on Oct 16,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 21:13:16 on Oct 16,2018
+# Loading sv_std.std
+# Loading work.testbench
+# ** Error: (vsim-3033) C:/ece385/lab6g/testbench.sv(17): Instantiation of 'slc3_test' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: C:/ece385/lab6g/testbench.sv
+#         Searched libraries:
+#             C:/intelFPGA_lite/18.0/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_lite/18.0/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA_lite/18.0/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA_lite/18.0/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA_lite/18.0/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA_lite/18.0/modelsim_ase/altera/verilog/cycloneive
+#             C:/ece385/lab6g/simulation/modelsim/rtl_work
+#             C:/ece385/lab6g/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./lab6_toplevel_run_msim_rtl_verilog.do PAUSED at line 27
+# End time: 21:48:50 on Oct 16,2018, Elapsed time: 0:35:34
+# Errors: 1, Warnings: 0

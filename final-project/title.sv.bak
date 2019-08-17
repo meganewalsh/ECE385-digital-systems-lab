@@ -1,0 +1,21 @@
+module title (( input [12:0]  DrawX, DrawY,
+           output logic  is_title,
+			  output logic [10:0] sprite_title );
+
+logic [10:0] start_x = 216;
+logic [10:0] start_y = 100;
+logic [10:0] size_x = 234;
+logic [10:0] size_y = 189;
+
+always_comb begin
+	if ( DrawX >= start_x & DrawX < start_x + size_x & DrawY >= start_y & DrawY < start_y + size_y ) begin
+		is_title = 1'b1;
+		sprite_addr_title = (DrawY - start_y + 16*'h0d);
+	end
+	else begin
+		is_title = 1'b0;
+		sprite_addr_title = 10'b0;
+	end
+end
+	
+endmodule
